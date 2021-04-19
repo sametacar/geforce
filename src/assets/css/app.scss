@@ -1,10 +1,18 @@
 @font-face {
   font-family: 'greycliff';
-  src: url(assets/fonts/greycliff-cf-medium.ttf);
+  src: url(../fonts/greycliff-cf-medium.ttf);
 }
+
+$green: #76b900;
+$white: #ffffff;
+$softDark: #1e1e1e;
 
 .App {
   font-family: 'greycliff';
+}
+
+body {
+  margin: 0;
 }
 
 body, button {
@@ -89,12 +97,12 @@ nav .header ul li a {
 }
 
 nav .header ul li a:hover, nav .header ul li a.selected {
-  color: #76b900;
+  color: $green;
 }
 
 nav .header ul li a.selected::after { 
   text-align: center;
-  content: url("assets/imgs/header-up-arrow.svg");
+  content: url("../imgs/header-up-arrow.svg");
   position: absolute;
   bottom: -39px;
   left: 0;
@@ -102,8 +110,8 @@ nav .header ul li a.selected::after {
 }
 
 nav .header .lets-play {
-  background: #76b900;
-  color: #fff;
+  background: $green;
+  color: $white;
   border: none; 
   font-family: 'greycliff';
   font-size: 16px;
@@ -130,7 +138,7 @@ nav .header .lets-play {
   font-size: 40px;
   text-align: center;
   font-weight: bold;
-  color: #ffffff;
+  color: $white;
   
 }
 
@@ -138,7 +146,7 @@ nav .header .lets-play {
   font-size: 20px;
   text-align: center;
   font-weight: normal;
-  color: #ffffff;
+  color: $white;
   margin-top: 15px;
 }
 
@@ -173,7 +181,7 @@ nav .header .lets-play {
 
 .btn-sort-header {
   padding: 16px 16px 15px;
-  background-color: #1e1e1e;
+  background-color: $softDark;
   font-size: 20px;
   font-weight: 600;
   color: #afafaf;
@@ -190,7 +198,7 @@ nav .header .lets-play {
 
 .sort-plane {
   box-shadow: 0 4px 12px 0 #000000;
-  background-color: #1e1e1e;
+  background-color: $softDark;
   color: #afafaf;
   position: absolute;
   right: 0;
@@ -201,7 +209,7 @@ nav .header .lets-play {
 
 .sort-plane .btn-sort {
   padding: 16px 16px 15px;
-  background-color: #1e1e1e;
+  background-color: $softDark;
   font-size: 20px;
   font-weight: 600;
   color: #afafaf;
@@ -232,13 +240,13 @@ nav .header .lets-play {
 }
 
 h2.h2-main-title {
-  color: #fff;
+  color: $white;
   font-weight: 800;
   font-size: 28px;
 }
 
 .cover {
-   background: #1e1e1e;
+   background: $softDark;
    padding: 40px 30px
 }
 
@@ -279,7 +287,7 @@ h2.h2-main-title {
 }
 
 .checkbox + label {
-  background: url("assets/imgs/checkbox.svg");
+  background: url("../imgs/checkbox.svg");
   height: 24px;
   width: 24px;
   display:inline-block;
@@ -288,7 +296,7 @@ h2.h2-main-title {
 }
 
 .checkbox:checked + label{
-  background-color: #76b900;
+  background-color: $green;
   height: 24px;
   width: 24px;
   display:inline-block;
@@ -302,7 +310,7 @@ h2.h2-main-title {
   margin-left: 5px;
   width:16px;
   height:12px;
-  background:  url('assets/imgs/stroke.svg') no-repeat;
+  background:  url('../imgs/stroke.svg') no-repeat;
   cursor: pointer;
   display: block;
 }
@@ -324,7 +332,7 @@ h2.h2-main-title {
 }
 
 .main-cover .samet-12 .game-name a:hover{
-  color: #76b900;
+  color: $green;
 }
 
 .side-menu { 
@@ -334,7 +342,7 @@ h2.h2-main-title {
 .polygon { 
   width: 60px; 
   height: 60px;
-  background: url('assets/imgs/polygon.svg') no-repeat; 
+  background: url('../imgs/polygon.svg') no-repeat; 
   background-position: 50%;
   position: relative;
   display: flex;
@@ -344,14 +352,14 @@ h2.h2-main-title {
 }
 
 .polygon .letter{ 
-  color: #1e1e1e;
+  color: $softDark;
   font-size: 30px;
   font-weight: bold;
 }
 
 /* FOOTER */
 .footer {
-  background: #ffffff;
+  background: $white;
   padding: 24px 0;
 }
 
@@ -374,7 +382,7 @@ h2.h2-main-title {
 
 
 .copyright {
-  background-color: #1e1e1e;
+  background-color: $softDark;
   padding: 20px 0;
 }
 
@@ -383,7 +391,7 @@ h2.h2-main-title {
 
 .copyright .copyright-links a {
   margin-right: 22px;
-  color: #ffffff;
+  color: $white;
   text-decoration: none;
   font-size: 12px;
   font-weight: 600;
